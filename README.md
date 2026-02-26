@@ -1,6 +1,6 @@
 # Insecticide_Resistance_Kwale_County
-The code below describes the association btn phenotypic and genotypic insecticide resistance monitoring in Anopheles mosquitoes in Kwale County
-###setting work directory
+## The code below describes the association btn phenotypic and genotypic insecticide resistance monitoring in Anopheles mosquitoes in Kwale County
+```###setting work directory
 insecticde<-read.csv("C:/DATA/Msc Research Docs/Thesis/Thesis documents/Reviewed Thesis/Marta/Insecticide_data_Kwale.csv")
 getwd("C:/DATA/Msc Research Docs/Thesis/Thesis documents/Reviewed Thesis/Marta")
 names(insecticde)
@@ -111,4 +111,4 @@ kdrCG<-compareGroups(formula = status~KDR.Detection,
 kdrCG_table<-createTable(x = kdrCG,show.n = TRUE,
                          show.p.ratio = TRUE, show.ratio = TRUE)
 summary(kdrCG_table)
-export2csv(x = kdrCG_table,file = "kdr.csv")
+export2csv(x = kdrCG_table,file = "kdr.csv")```
